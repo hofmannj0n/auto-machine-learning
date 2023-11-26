@@ -304,7 +304,7 @@ if choice == 'ML Model Selection 🦾':
     if "data" in st.session_state:
         data = st.session_state.data
 
-        chosen_target = st.selectbox('Choose the Target Column', data.columns)
+        chosen_target = st.selectbox('Choose the Target Column', data.columns[:4])
 
         if st.button('Run Modelling'): 
             setup(data, target=chosen_target)
