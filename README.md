@@ -7,7 +7,7 @@ This application allows a user to generate stock market data in one of two ways:
 
 The application then provides the user with a data profile, as well as visualizations of all the target columns
 
-In the final step, the user is prompted to "Run Modeling" which triggers the running of all popular machine learning algorithims on the users target columns
+In the final step, the user is prompted to "Run Modeling" which triggers the running of all popular machine learning algorithims on the users target column
 
 The user is then able to download their data with prediction labels, based on the most accurate model by MSE, for further use and experimentation.
 
