@@ -27,6 +27,7 @@ def create_dataset(stock, start_date, end_date):
     return data
 
 # Cache the conversion to prevent computation on every rerun
+@st.cache_data
 def convert_df(df):
     return df.to_csv().encode('utf-8')
 
