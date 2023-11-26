@@ -31,7 +31,6 @@ def convert_df(df):
     return df.to_csv().encode('utf-8')
 
 # extract text from document 
-@st.cacche_data
 def extract_text_from_document(document_path):
     document_analysis = DocumentAnalysisClient(endpoint=ENDPOINT, credential=AzureKeyCredential(API_KEY))
 
