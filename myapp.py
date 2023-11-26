@@ -313,16 +313,13 @@ if choice == 'ML Model Selection 🦾':
             # Display only a summary of the model comparisons
             st.write("Model Accuracy: (Ranked Most Accurate - to Least Accurate)")
             compare_df = pull()
-            st.dataframe(compare_df.head())  # Display only the top rows
+            st.dataframe(compare_df) 
             
             # Display only a summary of model predictions
             st.write("Model Predictions: (Using Most Accurate Model)")
             most_accurate_model = predict_model(best_model)
             st.session_state.most_accurate_model = most_accurate_model
-            st.dataframe(most_accurate_model.head())  # Display only the top rows
-
-            # Clear unnecessary variables
-            del data
+            st.dataframe(most_accurate_model.head(20))
 
     else:
         st.warning("No data generated yet. Please select 'Data Selection' and generate data first.")
