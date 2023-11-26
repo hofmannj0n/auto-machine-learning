@@ -14,8 +14,8 @@ from pycaret.regression import *
 
 
 # credentials
-API_KEY = "79ab295c19394593829bfd22215cff98"
-ENDPOINT = "https://feather-form-recognizer.cognitiveservices.azure.com/"
+API_KEY = os.environ.get('API_KEY')
+ENDPOINT = os.environ.get('ENDPOINT')
 
 # global function to create datasets based on user inputs 
 def create_dataset(stock, start_date, end_date):
