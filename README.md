@@ -1,5 +1,5 @@
 # project-automatic-ML
-automated machine learning
+automated machine learning on user generated stock market data
 
 This application allows a user to generate stock market data in one of two ways:
 1. Generating data inside the application using widgets and drop down menus
